@@ -172,7 +172,16 @@ function Header() {
 function Hero() {
   return (
     <section className="relative overflow-hidden px-4 pb-20 pt-32 sm:px-6 sm:pt-40 lg:px-8 lg:pb-28 lg:pt-48">
-      <div className="mx-auto max-w-6xl">
+      <img
+        src={obraSombra}
+        alt=""
+        aria-hidden="true"
+        width={1200}
+        height={800}
+        loading="lazy"
+        className="pointer-events-none absolute bottom-0 right-0 w-full max-w-3xl opacity-[0.08] mix-blend-multiply"
+      />
+      <div className="relative z-10 mx-auto max-w-6xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="animate-fade-in-up">
             <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">

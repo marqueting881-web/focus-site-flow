@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 
 import heroMockup from "../assets/hero-mockup.png";
+import obraSombra from "../assets/obra-sombra.png";
 import portfolioEstetica from "../assets/portfolio-estetica.png";
 import portfolioConstrutora from "../assets/portfolio-construtora.png";
 import portfolioRestaurante from "../assets/portfolio-restaurante.png";

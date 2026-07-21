@@ -327,9 +327,9 @@ function Services() {
 function Portfolio() {
   const projects = [
     {
-      image: portfolioEstetica,
-      title: "Clínica de Estética",
-      description: "Site elegante para clínica de estética e bem-estar.",
+      image: portfolioJoaoPedro,
+      title: "João Pedro Construção",
+      description: "Site institucional para construtora, com foco em credibilidade e conversão.",
     },
     {
       image: portfolioConstrutora,

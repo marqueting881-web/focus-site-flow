@@ -176,10 +176,10 @@ function Hero() {
         src={casaHero.url}
         alt=""
         aria-hidden="true"
-        width={1200}
-        height={800}
+        width={1008}
+        height={1600}
         loading="lazy"
-        className="pointer-events-none absolute -bottom-10 -right-10 w-full max-w-3xl object-cover opacity-[0.22] blur-2xl"
+        className="pointer-events-none absolute right-[8%] top-1/2 h-[520px] w-[420px] -translate-y-1/2 object-cover opacity-30 blur-xl"
       />
       <div className="relative z-10 mx-auto max-w-6xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">

@@ -172,23 +172,15 @@ function Header() {
 function Hero() {
   return (
     <section className="relative overflow-hidden px-4 pb-20 pt-32 sm:px-6 sm:pt-40 lg:px-8 lg:pb-28 lg:pt-48">
-      <div
+      <img
+        src={casaHero.url}
+        alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -right-8 bottom-0 top-0 w-full max-w-2xl overflow-hidden opacity-[0.12] blur-2xl"
-        style={{
-          WebkitMaskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)",
-          maskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)",
-        }}
-      >
-        <img
-          src={casaHero.url}
-          alt=""
-          width={1200}
-          height={800}
-          loading="lazy"
-          className="h-full w-full object-cover"
-        />
-      </div>
+        width={1200}
+        height={800}
+        loading="lazy"
+        className="pointer-events-none absolute -right-16 bottom-0 w-full max-w-2xl object-cover opacity-[0.08] blur-3xl grayscale"
+      />
       <div className="relative z-10 mx-auto max-w-6xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="animate-fade-in-up">

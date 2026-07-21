@@ -81,10 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Sites modernos, rápidos e estratégicos para empresas que querem crescer na internet. Criação de landing pages, sites institucionais e redesign." },
       { name: "author", content: "Leonardo LF" },
       { property: "og:title", content: "Leonardo LF | Criação de Sites Profissionais" },
-      { property: "og:description", content: "Sites modernos, rápidos e estratégicos para empresas que querem crescer na internet." },
+      { property: "og:description", content: "Sites modernos, rápidos e estratégicos para empresas que querem crescer na internet. Criação de landing pages, sites institucionais e redesign." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@leonardolf" },
+      { name: "twitter:title", content: "Leonardo LF | Criação de Sites Profissionais" },
+      { name: "twitter:description", content: "Sites modernos, rápidos e estratégicos para empresas que querem crescer na internet. Criação de landing pages, sites institucionais e redesign." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/630b3b93-9b23-42b1-9304-1e80fc35aaa2/id-preview-ebcd14b7--47aa69b3-cc65-4a2b-bbd2-e3c83141c615.lovable.app-1784643751647.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/630b3b93-9b23-42b1-9304-1e80fc35aaa2/id-preview-ebcd14b7--47aa69b3-cc65-4a2b-bbd2-e3c83141c615.lovable.app-1784643751647.png" },
     ],
     links: [
       {

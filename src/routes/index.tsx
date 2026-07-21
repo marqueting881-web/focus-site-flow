@@ -179,7 +179,7 @@ function Hero() {
         width={1200}
         height={800}
         loading="lazy"
-        className="pointer-events-none absolute -bottom-10 -right-10 w-full max-w-4xl rounded-2xl opacity-[0.35]"
+        className="pointer-events-none absolute -bottom-12 -right-12 w-full max-w-3xl rounded-2xl object-cover opacity-20 blur-xl"
       />
       <div className="relative z-10 mx-auto max-w-6xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">

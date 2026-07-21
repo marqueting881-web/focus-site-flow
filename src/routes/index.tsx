@@ -18,7 +18,7 @@ import {
 
 import heroMockup from "../assets/hero-mockup.png";
 import obraSombra from "../assets/obra-sombra.png";
-import portfolioEstetica from "../assets/portfolio-estetica.png";
+import portfolioJoaoPedro from "../assets/portfolio-joao-pedro-construcao.png";
 import portfolioConstrutora from "../assets/portfolio-construtora.png";
 import portfolioRestaurante from "../assets/portfolio-restaurante.png";
 import portfolioAcademia from "../assets/portfolio-academia.png";
@@ -327,9 +327,9 @@ function Services() {
 function Portfolio() {
   const projects = [
     {
-      image: portfolioEstetica,
-      title: "Clínica de Estética",
-      description: "Site elegante para clínica de estética e bem-estar.",
+      image: portfolioJoaoPedro,
+      title: "João Pedro Construção",
+      description: "Site institucional para construtora, com foco em credibilidade e conversão.",
     },
     {
       image: portfolioConstrutora,

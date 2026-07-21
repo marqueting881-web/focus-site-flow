@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 import heroMockup from "../assets/hero-mockup.png";
-import obraSombra from "../assets/obra-sombra.png";
+import casaHero from "../assets/casa-hero.jpg.asset.json";
 import portfolioJoaoPedro from "../assets/portfolio-joao-pedro-construcao.png";
 import portfolioConstrutora from "../assets/portfolio-construtora.png";
 import portfolioRestaurante from "../assets/portfolio-restaurante.png";
@@ -173,13 +173,13 @@ function Hero() {
   return (
     <section className="relative overflow-hidden px-4 pb-20 pt-32 sm:px-6 sm:pt-40 lg:px-8 lg:pb-28 lg:pt-48">
       <img
-        src={obraSombra}
+        src={casaHero.url}
         alt=""
         aria-hidden="true"
         width={1200}
         height={800}
         loading="lazy"
-        className="pointer-events-none absolute -bottom-10 -right-10 w-full max-w-4xl opacity-[0.40]"
+        className="pointer-events-none absolute -bottom-10 -right-10 w-full max-w-4xl rounded-2xl opacity-[0.35]"
       />
       <div className="relative z-10 mx-auto max-w-6xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">

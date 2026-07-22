@@ -343,9 +343,9 @@ function Portfolio() {
       description: "Site profissional para construtor autônomo, com foco em orçamentos.",
     },
     {
-      image: portfolioAcademia,
-      title: "Academia",
-      description: "Site para academia com design dinâmico e impactante.",
+      image: portfolioConstrutoraVermelha,
+      title: "Construtora Alfa",
+      description: "Site para construtora com identidade visual em vermelho e foco em projetos.",
     },
   ];
 

@@ -189,8 +189,8 @@ function Hero() {
               Criação de Sites
             </p>
             <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Sites profissionais que ajudam empresas a{" "}
-              <span className="text-primary">crescer na internet</span>.
+              Sites profissionais que ajudam{" "}
+              <span className="text-primary">construtores e construtoras</span> a crescer na internet.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
               Crio sites modernos, rápidos e estratégicos para empresas que querem passar mais

@@ -338,9 +338,9 @@ function Portfolio() {
       description: "Site corporativo para empresa do setor da construção.",
     },
     {
-      image: portfolioRestaurante,
-      title: "Restaurante",
-      description: "Site moderno para restaurante com foco em conversão.",
+      image: portfolioConstrutorAutonomo,
+      title: "Construtor Autônomo",
+      description: "Site profissional para construtor autônomo, com foco em orçamentos.",
     },
     {
       image: portfolioAcademia,

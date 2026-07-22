@@ -21,7 +21,7 @@ import casaHero from "../assets/casa-hero.jpg.asset.json";
 import portfolioJoaoPedro from "../assets/portfolio-joao-pedro-construcao.png";
 import portfolioConstrutora from "../assets/portfolio-construtora.png";
 import portfolioRestaurante from "../assets/portfolio-restaurante.png";
-import portfolioAcademia from "../assets/portfolio-academia.png";
+import portfolioConstrutoraVermelha from "../assets/portfolio-construtora-vermelha.png";
 import portfolioConstrutorAutonomo from "../assets/portfolio-construtor-autonomo.png";
 
 const WHATSAPP_LINK =

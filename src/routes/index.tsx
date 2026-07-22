@@ -24,7 +24,7 @@ import portfolioRestaurante from "../assets/portfolio-restaurante.png";
 import portfolioAcademia from "../assets/portfolio-academia.png";
 
 const WHATSAPP_LINK =
-  "https://wa.me/5511999999999?text=Olá%20Leonardo,%20quero%20solicitar%20um%20orçamento%20para%20meu%20site";
+  "https://wa.me/5551998232206?text=Ol%C3%A1!%20Gostaria%20de%20construir%20um%20site%20profissional%20para%20minha%20empresa.%20Poderia%20me%20passar%20mais%20informa%C3%A7%C3%B5es";
 
 function useScrollReveal() {
   const ref = useRef<HTMLDivElement>(null);

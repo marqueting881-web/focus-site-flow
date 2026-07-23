@@ -16,7 +16,7 @@ import {
   Mail,
 } from "lucide-react";
 
-import heroMockup from "../assets/hero-mockup.png";
+import heroMockup from "../assets/hero-mockup-novo.png.asset.json";
 import casaHero from "../assets/casa-hero.jpg.asset.json";
 import portfolioJoaoPedro from "../assets/portfolio-joao-pedro-construcao.png";
 import portfolioConstrutora from "../assets/portfolio-construtora.png";
@@ -219,7 +219,7 @@ function Hero() {
             <div className="relative mx-auto max-w-2xl">
               <div className="absolute -inset-4 rounded-full bg-primary/5 blur-3xl" />
               <img
-                src={heroMockup}
+                src={heroMockup.url}
                 alt="Mockup de site profissional em computador e celular"
                 width={1200}
                 height={800}

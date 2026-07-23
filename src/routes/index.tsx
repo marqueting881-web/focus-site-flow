@@ -16,7 +16,7 @@ import {
   Mail,
 } from "lucide-react";
 
-import heroMockup from "../assets/hero-mockup.png";
+import heroMockup from "../assets/hero-mockup-novo.png.asset.json";
 import casaHero from "../assets/casa-hero.jpg.asset.json";
 import portfolioJoaoPedro from "../assets/portfolio-joao-pedro-construcao.png";
 import portfolioConstrutora from "../assets/portfolio-construtora.png";

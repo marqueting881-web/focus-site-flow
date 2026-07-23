@@ -219,7 +219,7 @@ function Hero() {
             <div className="relative mx-auto max-w-2xl">
               <div className="absolute -inset-4 rounded-full bg-primary/5 blur-3xl" />
               <img
-                src={heroMockup}
+                src={heroMockup.url}
                 alt="Mockup de site profissional em computador e celular"
                 width={1200}
                 height={800}

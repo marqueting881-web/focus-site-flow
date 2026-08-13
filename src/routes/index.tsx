@@ -476,7 +476,7 @@ function Footer() {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/sites_para_contrutoras/"
               target="_blank"
               rel="noopener noreferrer"
               className="grid h-10 w-10 place-items-center rounded-full bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"

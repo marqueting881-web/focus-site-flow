@@ -329,7 +329,7 @@ function Portfolio() {
   const projects = [
     {
       image: portfolioJoaoPedro,
-      title: "João Pedro Construção",
+      title: "Construções em Condomínio",
       description: "Site institucional para construtora, com foco em credibilidade e conversão.",
     },
     {

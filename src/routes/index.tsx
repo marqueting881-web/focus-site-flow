@@ -16,7 +16,7 @@ import {
   Mail,
 } from "lucide-react";
 
-import heroMockup from "../assets/hero-mockup-novo.png.asset.json";
+import heroApresentacao from "../assets/hero-apresentacao.png.asset.json";
 import casaHero from "../assets/casa-hero.jpg.asset.json";
 import portfolioJoaoPedro from "../assets/portfolio-joao-pedro-construcao.png";
 import portfolioConstrutora from "../assets/portfolio-construtora.png";
@@ -193,8 +193,8 @@ function Hero() {
               <span className="text-primary">construtores e construtoras</span> a crescer na internet.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Crio sites modernos, rápidos e estratégicos para empresas que querem passar mais
-              confiança e conquistar novos clientes.
+              Cuido da apresentação profissional da sua construtora: um site moderno, rápido e
+              estratégico, feito para passar confiança e conquistar novos clientes.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
@@ -216,14 +216,14 @@ function Hero() {
           </div>
 
           <div className="animate-fade-in-delayed relative">
-            <div className="relative mx-auto max-w-2xl">
-              <div className="absolute -inset-4 rounded-full bg-primary/5 blur-3xl" />
+            <div className="relative mx-auto max-w-md lg:max-w-lg">
+              <div className="absolute -inset-6 rounded-full bg-primary/5 blur-3xl" />
               <img
-                src={heroMockup.url}
-                alt="Mockup de site profissional em computador e celular"
-                width={1200}
-                height={800}
-                className="relative z-10 w-full"
+                src={heroApresentacao.url}
+                alt="Site profissional de construtora apresentado em computador e celular"
+                width={1122}
+                height={1402}
+                className="relative z-10 w-full rounded-2xl border border-border/60 shadow-2xl shadow-foreground/10"
               />
             </div>
           </div>
@@ -257,7 +257,7 @@ function Benefits() {
       <div className="mx-auto max-w-6xl">
         <ScrollReveal className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Por que sua empresa precisa de um site profissional?
+            Por que sua construtora precisa de uma apresentação profissional?
           </h2>
         </ScrollReveal>
 
@@ -380,6 +380,14 @@ function Portfolio() {
             </ScrollReveal>
           ))}
         </div>
+
+        <ScrollReveal className="mt-14" delay={0.1}>
+          <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
+            <span className="font-semibold text-foreground">Depois do site no ar:</span> identidade
+            visual e redes sociais alinhadas com a sua marca, para a sua empresa aparecer da mesma
+            forma em todos os lugares.
+          </p>
+        </ScrollReveal>
       </div>
     </section>
   );
@@ -445,7 +453,7 @@ function FinalCTA() {
                 Pronto para ter um site profissional?
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-lg text-primary-foreground/80">
-                Solicite uma ideia de site para sua empresa.
+                Solicite uma ideia de site para a sua construtora.
               </p>
               <a
                 href={WHATSAPP_LINK}
@@ -514,6 +522,24 @@ function Footer() {
 }
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Sites para Construtoras e Construtores | Leonardo LF" },
+      {
+        name: "description",
+        content:
+          "Cuido da apresentação profissional da sua construtora na internet: site moderno, rápido e estratégico para passar confiança e conquistar novos clientes.",
+      },
+      { property: "og:title", content: "Sites para Construtoras e Construtores | Leonardo LF" },
+      {
+        property: "og:description",
+        content:
+          "Cuido da apresentação profissional da sua construtora na internet: site moderno, rápido e estratégico para passar confiança e conquistar novos clientes.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 

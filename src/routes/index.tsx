@@ -109,7 +109,7 @@ function Header() {
 
   return (
     <header
-      className={`fixed left-0 right-0 top-0 z-50 border-b border-border bg-secondary/85 backdrop-blur-xl transition-all duration-300 ${
+      className={`fixed left-0 right-0 top-0 z-50 border-b border-border bg-topbar/95 backdrop-blur-xl transition-all duration-300 ${
         isScrolled ? "shadow-[0_1px_6px_rgba(15,23,42,0.08)]" : ""
       }`}
     >
@@ -153,7 +153,7 @@ function Header() {
 
       {/* Mobile nav */}
       {isMenuOpen && (
-        <div className="border-t border-border bg-secondary/95 px-4 py-6 backdrop-blur-xl md:hidden">
+        <div className="border-t border-border bg-topbar/95 px-4 py-6 backdrop-blur-xl md:hidden">
 
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (

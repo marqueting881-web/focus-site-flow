@@ -644,12 +644,12 @@ function FinalCTA() {
 
 function Footer() {
   return (
-    <footer className="border-t border-border px-4 py-12 sm:px-6 lg:px-8">
+    <footer className="bg-footer px-4 py-12 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <div className="text-center sm:text-left">
-            <p className="text-lg font-bold text-foreground">Leonardo LF</p>
-            <p className="mt-1 text-sm text-muted-foreground">Criação de sites profissionais</p>
+            <p className="text-lg font-bold text-white">Leonardo LF</p>
+            <p className="mt-1 text-sm text-footer-muted">Criação de sites profissionais</p>
           </div>
 
           <div className="flex items-center gap-4">
@@ -657,7 +657,7 @@ function Footer() {
               href="https://www.instagram.com/sites_para_contrutoras/"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid h-10 w-10 place-items-center rounded-full bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-primary hover:text-primary-foreground"
               aria-label="Instagram"
             >
               <Instagram className="h-5 w-5" />
@@ -666,14 +666,14 @@ function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid h-10 w-10 place-items-center rounded-full bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-primary hover:text-primary-foreground"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a
               href="mailto:contato@leonardolf.com"
-              className="grid h-10 w-10 place-items-center rounded-full bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-primary hover:text-primary-foreground"
               aria-label="Email"
             >
               <Mail className="h-5 w-5" />
@@ -681,8 +681,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-border pt-8 text-center">
-          <p className="text-sm text-muted-foreground">
+        <div className="mt-8 border-t border-white/15 pt-8 text-center">
+          <p className="text-sm text-footer-muted">
             © {new Date().getFullYear()} Leonardo LF. Todos os direitos reservados.
           </p>
         </div>

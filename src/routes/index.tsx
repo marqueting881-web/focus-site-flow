@@ -20,6 +20,10 @@ import {
   Zap,
   Wrench,
   Users,
+  Smartphone,
+  Phone,
+  ListChecks,
+  Headset,
 } from "lucide-react";
 
 import heroApresentacao from "../assets/hero-apresentacao.png.asset.json";
@@ -485,11 +489,75 @@ function Portfolio() {
           ))}
         </div>
 
-        <ScrollReveal className="mt-14" delay={0.1}>
-          <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
-            {"\n"}
+      </div>
+    </section>
+  );
+}
+
+function Trust() {
+  const guarantees = [
+    {
+      icon: MessageCircle,
+      title: "Atendimento direto",
+      description: "Você conversa comigo do começo ao fim, sem intermediários.",
+    },
+    {
+      icon: Layout,
+      title: "Projeto personalizado",
+      description: "Nada de modelo pronto: cada site é criado para a sua empresa.",
+    },
+    {
+      icon: Smartphone,
+      title: "Site adaptado para celular",
+      description: "Sua apresentação funciona bem em qualquer tela.",
+    },
+    {
+      icon: Phone,
+      title: "Botão para WhatsApp",
+      description: "O cliente pede orçamento com um clique, direto no seu número.",
+    },
+    {
+      icon: ListChecks,
+      title: "Organização das informações",
+      description: "Serviços, obras e contatos apresentados de forma clara.",
+    },
+    {
+      icon: Headset,
+      title: "Suporte durante o desenvolvimento",
+      description: "Acompanho cada etapa e ajusto o que for necessário.",
+    },
+  ];
+
+  return (
+    <section id="confianca" className="px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <div className="mx-auto max-w-6xl">
+        <ScrollReveal className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
+            Você cuida da sua obra. <span className="text-primary">Eu cuido da sua presença online.</span>
+          </h2>
+          <p className="mt-6 leading-relaxed text-muted-foreground">
+            Você me envia as informações, fotos e serviços da sua empresa. Eu organizo tudo e
+            desenvolvo uma apresentação profissional para o seu negócio.
           </p>
         </ScrollReveal>
+
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {guarantees.map((item, index) => (
+            <ScrollReveal key={item.title} delay={index * 0.08}>
+              <div className="flex h-full gap-4 rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl hover:shadow-foreground/5">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <item.icon className="h-5 w-5" />
+                </span>
+                <div>
+                  <h3 className="font-bold text-foreground">{item.title}</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -655,6 +723,7 @@ function Index() {
         <Services />
         <Audience />
         <Portfolio />
+        <Trust />
         <HowItWorks />
         <FinalCTA />
       </main>

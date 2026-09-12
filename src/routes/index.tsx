@@ -14,6 +14,12 @@ import {
   Instagram,
   Linkedin,
   Mail,
+  HardHat,
+  Ruler,
+  Compass,
+  Zap,
+  Wrench,
+  Users,
 } from "lucide-react";
 
 import heroApresentacao from "../assets/hero-apresentacao.png.asset.json";
@@ -92,6 +98,7 @@ function Header() {
 
   const navLinks = [
     { label: "Serviços", href: "#servicos" },
+    { label: "Para quem", href: "#para-quem" },
     { label: "Projetos", href: "#projetos" },
     { label: "Contato", href: "#contato" },
   ];
@@ -326,6 +333,102 @@ function Services() {
   );
 }
 
+function Audience() {
+  const audience = [
+    {
+      icon: Building2,
+      title: "Construtoras",
+      description: "Empresas que querem apresentar obras e portfólio com seriedade.",
+    },
+    {
+      icon: HardHat,
+      title: "Construtores",
+      description: "Profissionais que precisam passar confiança antes do orçamento.",
+    },
+    {
+      icon: Ruler,
+      title: "Engenheiros",
+      description: "Autoridade técnica traduzida em uma página clara e objetiva.",
+    },
+    {
+      icon: Compass,
+      title: "Arquitetos",
+      description: "Um espaço para mostrar projetos com o padrão visual que eles exigem.",
+    },
+    {
+      icon: Zap,
+      title: "Eletricistas",
+      description: "Serviços apresentados de forma simples, com contato direto no WhatsApp.",
+    },
+    {
+      icon: Wrench,
+      title: "Instaladores",
+      description: "Páginas rápidas para quem depende de chamados e indicações.",
+    },
+  ];
+
+  return (
+    <section id="para-quem" className="px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <div className="mx-auto max-w-6xl">
+        <ScrollReveal className="mx-auto max-w-2xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
+            Para quem eu crio sites
+          </p>
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            Se a sua empresa depende da confiança do cliente, esse site é para você
+          </h2>
+        </ScrollReveal>
+
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {audience.map((item, index) => (
+            <ScrollReveal key={item.title} delay={index * 0.08}>
+              <div className="flex h-full items-start gap-4 rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5">
+                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
+                  <item.icon className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        <ScrollReveal className="mt-6" delay={0.1}>
+          <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-border bg-secondary/40 p-6 sm:flex-row sm:p-8">
+            <div className="flex items-start gap-4 text-center sm:text-left">
+              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
+                <Users className="h-5 w-5" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-foreground">
+                  E outros profissionais da construção civil
+                </h3>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  Se o seu trabalho precisa ser apresentado com profissionalismo, eu crio o seu
+                  site.
+                </p>
+              </div>
+            </div>
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25"
+            >
+              Solicitar orçamento
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+        </ScrollReveal>
+      </div>
+    </section>
+  );
+}
+
 function Portfolio() {
   const projects = [
     {
@@ -552,6 +655,7 @@ function Index() {
         <Hero />
         <Benefits />
         <Services />
+        <Audience />
         <Portfolio />
         <HowItWorks />
         <FinalCTA />

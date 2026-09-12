@@ -143,7 +143,8 @@ function Header() {
         {/* Mobile menu button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="grid h-10 w-10 place-items-center rounded-full bg-secondary md:hidden"
+          className="grid h-10 w-10 place-items-center rounded-full bg-background shadow-sm md:hidden"
+
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
         >
           {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

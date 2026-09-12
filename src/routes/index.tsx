@@ -620,7 +620,7 @@ function FinalCTA() {
 
             <div className="relative z-10">
               <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl">
-                Pronto para ter um site profissional?
+                Solicitar orçamento pelo whatsApp?
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-lg text-primary-foreground/80">
                 Solicite uma ideia de site para a sua construtora.

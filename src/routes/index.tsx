@@ -125,7 +125,7 @@ function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium text-foreground/75 transition-colors hover:text-foreground"
             >
               {link.label}
             </a>
@@ -161,7 +161,7 @@ function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="text-base font-medium text-foreground/80 transition-colors hover:text-foreground"
               >
                 {link.label}
               </a>

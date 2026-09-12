@@ -153,7 +153,8 @@ function Header() {
 
       {/* Mobile nav */}
       {isMenuOpen && (
-        <div className="border-t border-border bg-background px-4 py-6 md:hidden">
+        <div className="border-t border-border bg-secondary/95 px-4 py-6 backdrop-blur-xl md:hidden">
+
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <a

@@ -380,6 +380,14 @@ function Portfolio() {
             </ScrollReveal>
           ))}
         </div>
+
+        <ScrollReveal className="mt-14" delay={0.1}>
+          <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
+            <span className="font-semibold text-foreground">Depois do site no ar:</span> identidade
+            visual e redes sociais alinhadas com a sua marca, para a sua empresa aparecer da mesma
+            forma em todos os lugares.
+          </p>
+        </ScrollReveal>
       </div>
     </section>
   );
@@ -445,7 +453,7 @@ function FinalCTA() {
                 Pronto para ter um site profissional?
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-lg text-primary-foreground/80">
-                Solicite uma ideia de site para sua empresa.
+                Solicite uma ideia de site para a sua construtora.
               </p>
               <a
                 href={WHATSAPP_LINK}
@@ -514,6 +522,24 @@ function Footer() {
 }
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Sites para Construtoras e Construtores | Leonardo LF" },
+      {
+        name: "description",
+        content:
+          "Cuido da apresentação profissional da sua construtora na internet: site moderno, rápido e estratégico para passar confiança e conquistar novos clientes.",
+      },
+      { property: "og:title", content: "Sites para Construtoras e Construtores | Leonardo LF" },
+      {
+        property: "og:description",
+        content:
+          "Cuido da apresentação profissional da sua construtora na internet: site moderno, rápido e estratégico para passar confiança e conquistar novos clientes.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 

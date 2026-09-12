@@ -266,7 +266,7 @@ function Benefits() {
   ];
 
   return (
-    <section id="beneficios" className="bg-secondary/40 px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="beneficios" className="bg-topbar px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -373,7 +373,7 @@ function Audience() {
   ];
 
   return (
-    <section id="para-quem" className="bg-secondary/40 px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="para-quem" className="bg-topbar px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal className="mx-auto max-w-2xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
@@ -403,7 +403,7 @@ function Audience() {
         </div>
 
         <ScrollReveal className="mt-6" delay={0.1}>
-          <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-border bg-secondary/40 p-6 sm:flex-row sm:p-8">
+          <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-border bg-background p-6 sm:flex-row sm:p-8">
             <div className="flex items-start gap-4 text-center sm:text-left">
               <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
                 <Users className="h-5 w-5" />
@@ -530,7 +530,7 @@ function Trust() {
   ];
 
   return (
-    <section id="confianca" className="bg-secondary/40 px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="confianca" className="bg-topbar px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
@@ -612,7 +612,7 @@ function HowItWorks() {
 
 function FinalCTA() {
   return (
-    <section id="contato" className="px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="contato" className="bg-topbar px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-4xl">
         <ScrollReveal>
           <div className="relative overflow-hidden rounded-3xl bg-foreground px-6 py-16 text-center sm:px-12 lg:py-20">

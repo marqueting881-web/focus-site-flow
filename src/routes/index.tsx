@@ -487,9 +487,7 @@ function Portfolio() {
 
         <ScrollReveal className="mt-14" delay={0.1}>
           <p className="mx-auto max-w-2xl text-center leading-relaxed text-muted-foreground">
-            <span className="font-semibold text-foreground">Depois do site no ar:</span> identidade
-            visual e redes sociais alinhadas com a sua marca, para a sua empresa aparecer da mesma
-            forma em todos os lugares.
+            {"\n"}
           </p>
         </ScrollReveal>
       </div>

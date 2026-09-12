@@ -98,6 +98,7 @@ function Header() {
 
   const navLinks = [
     { label: "Serviços", href: "#servicos" },
+    { label: "Para quem", href: "#para-quem" },
     { label: "Projetos", href: "#projetos" },
     { label: "Contato", href: "#contato" },
   ];
@@ -654,6 +655,7 @@ function Index() {
         <Hero />
         <Benefits />
         <Services />
+        <Audience />
         <Portfolio />
         <HowItWorks />
         <FinalCTA />

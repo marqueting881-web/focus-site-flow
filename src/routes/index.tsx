@@ -372,7 +372,7 @@ function Audience() {
   ];
 
   return (
-    <section id="para-quem" className="px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="para-quem" className="bg-secondary/40 px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal className="mx-auto max-w-2xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
@@ -458,7 +458,7 @@ function Portfolio() {
   ];
 
   return (
-    <section id="projetos" className="bg-secondary/40 px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="projetos" className="px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -529,7 +529,7 @@ function Trust() {
   ];
 
   return (
-    <section id="confianca" className="px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="confianca" className="bg-secondary/40 px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">

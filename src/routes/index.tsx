@@ -25,7 +25,7 @@ import portfolioConstrutoraVermelha from "../assets/portfolio-construtora-vermel
 import portfolioConstrutorAutonomo from "../assets/portfolio-construtor-autonomo.png";
 
 const WHATSAPP_LINK =
-  "https://wa.me/5551998232206?text=Ol%C3%A1!%20Gostaria%20de%20construir%20meu%20site.";
+  "https://wa.me/5551998232206?text=Solicite%20uma%20ideia%20de%20site%20para%20sua%20empresa.";
 
 function useScrollReveal() {
   const ref = useRef<HTMLDivElement>(null);

@@ -193,8 +193,8 @@ function Hero() {
               <span className="text-primary">construtores e construtoras</span> a crescer na internet.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Cuido da apresentação profissional da sua construtora: um site moderno, rápido e
-              estratégico, feito para passar confiança e conquistar novos clientes.
+              Apresente suas obras, seus serviços e sua empresa em um site profissional conectado
+              diretamente ao WhatsApp.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a

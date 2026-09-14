@@ -24,6 +24,7 @@ import {
   Phone,
   ListChecks,
   Headset,
+  HeartHandshake,
 } from "lucide-react";
 
 import heroApresentacao from "../assets/hero-apresentacao.png.asset.json";
@@ -104,6 +105,7 @@ function Header() {
     { label: "Serviços", href: "#servicos" },
     { label: "Para quem", href: "#para-quem" },
     { label: "Projetos", href: "#projetos" },
+    { label: "Quem somos", href: "#quem-somos" },
     { label: "Contato", href: "#contato" },
   ];
 
@@ -609,6 +611,110 @@ function HowItWorks() {
   );
 }
 
+function About() {
+  const people = [
+    {
+      initials: "LF",
+      name: "Leonardo Fernandes",
+      role: "Criação e desenvolvimento",
+      description:
+        "Responsável pela criação dos sites, cuidando do visual e da organização das páginas para destacar sua empresa, seus serviços e suas obras.",
+    },
+    {
+      initials: "FB",
+      name: "Flávia Bittencourt",
+      role: "Atendimento e relacionamento",
+      description:
+        "Responsável pelo contato com você, ajudando a reunir as informações do projeto, esclarecer dúvidas e acompanhar cada etapa junto com você.",
+    },
+  ];
+
+  return (
+    <section id="quem-somos" className="bg-topbar px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <div className="mx-auto max-w-6xl">
+        <ScrollReveal className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+            Quem somos
+          </p>
+          <h2 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
+            Uma parceria em família para{" "}
+            <span className="text-primary">valorizar o seu negócio</span> na internet.
+          </h2>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.1}>
+          <div className="mx-auto mt-8 max-w-3xl space-y-5 text-center text-lg leading-relaxed text-muted-foreground">
+            <p>
+              Somos Leonardo e Flávia, o casal por trás da LF. Trabalhamos juntos para ajudar
+              construtoras e profissionais da construção a apresentar seus serviços com mais
+              profissionalismo e facilitar o contato com novos clientes.
+            </p>
+            <p>
+              Sabemos que quem está no dia a dia da obra tem pouco tempo para cuidar da presença na
+              internet. Por isso, nosso atendimento é simples e próximo: ouvimos suas ideias,
+              explicamos cada etapa e organizamos as informações para criar um site que represente o
+              seu trabalho.
+            </p>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal className="mt-16 text-center">
+          <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+            Quem cuida de cada etapa
+          </h3>
+        </ScrollReveal>
+
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
+          {people.map((person, index) => (
+            <ScrollReveal key={person.name} delay={index * 0.1}>
+              <div className="flex h-full gap-4 rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl hover:shadow-foreground/5">
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-primary/10 text-sm font-bold text-primary">
+                  {person.initials}
+                </span>
+                <div>
+                  <h4 className="text-lg font-bold text-foreground">{person.name}</h4>
+                  <p className="text-sm font-semibold text-primary">{person.role}</p>
+                  <p className="mt-2 leading-relaxed text-muted-foreground">{person.description}</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        <ScrollReveal delay={0.1}>
+          <div className="mx-auto mt-14 max-w-3xl rounded-3xl border border-border bg-background p-8 text-center sm:p-12">
+            <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <HeartHandshake className="h-6 w-6" />
+            </span>
+            <h3 className="mt-5 text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+              Nosso compromisso
+            </h3>
+            <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
+              Tratar o seu projeto com atenção, manter uma comunicação clara e valorizar aquilo que
+              você construiu com tanto esforço.
+            </p>
+            <p className="mx-auto mt-6 max-w-xl text-lg font-semibold leading-snug text-foreground">
+              Você cuida da obra.{" "}
+              <span className="text-primary">
+                Nós cuidamos da apresentação da sua empresa na internet.
+              </span>
+            </p>
+            <a
+              href="https://wa.me/5551998232206"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25"
+            >
+              <MessageCircle className="h-5 w-5" />
+              Converse com a gente pelo WhatsApp
+            </a>
+          </div>
+        </ScrollReveal>
+      </div>
+    </section>
+  );
+}
+
 function FinalCTA() {
   return (
     <section id="contato" className="bg-topbar px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
@@ -725,6 +831,7 @@ function Index() {
         <Portfolio />
         <Trust />
         <HowItWorks />
+        <About />
         <FinalCTA />
       </main>
       <Footer />

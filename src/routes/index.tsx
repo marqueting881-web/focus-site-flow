@@ -499,8 +499,8 @@ function Trust() {
   const guarantees = [
     {
       icon: MessageCircle,
-      title: "Atendimento direto",
-      description: "Você conversa comigo do começo ao fim, sem intermediários.",
+      title: "Atendimento humanizado",
+      description: "Você conversa nossa equipe do começo ao fim, sem intermediários.",
     },
     {
       icon: Layout,

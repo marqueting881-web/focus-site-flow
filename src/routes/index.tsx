@@ -694,10 +694,7 @@ function About() {
               você construiu com tanto esforço.
             </p>
             <p className="mx-auto mt-6 max-w-xl text-lg font-semibold leading-snug text-foreground">
-              Você cuida da obra.{" "}
-              <span className="text-primary">
-                Nós cuidamos da apresentação da sua empresa na internet.
-              </span>
+              Solicite uma ideia de site para a sua construtora.
             </p>
             <a
               href="https://wa.me/5551998232206"

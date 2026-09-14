@@ -58,6 +58,7 @@
   --color-footer: var(--footer);
   --color-footer-muted: var(--footer-muted);
   --color-topbar: var(--topbar);
+  --color-brand-deep: var(--brand-deep);
 
   /* Custom animation tokens */
   --animate-fade-in: fade-in 0.6s ease-out forwards;
@@ -102,6 +103,7 @@
   --footer: oklch(0.278 0.033 256.848);
   --footer-muted: oklch(0.723 0.024 256.788);
   --topbar: oklch(0.898 0.016 250);
+  --brand-deep: oklch(0.4 0.19 262);
 }
 
 .dark {
@@ -138,6 +140,7 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
   --topbar: oklch(0.24 0.032 260);
+  --brand-deep: oklch(0.48 0.2 262);
 }
 
 @layer base {

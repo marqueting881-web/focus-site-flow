@@ -24,6 +24,7 @@ import {
   Phone,
   ListChecks,
   Headset,
+  HeartHandshake,
 } from "lucide-react";
 
 import heroApresentacao from "../assets/hero-apresentacao.png.asset.json";
@@ -104,6 +105,7 @@ function Header() {
     { label: "Serviços", href: "#servicos" },
     { label: "Para quem", href: "#para-quem" },
     { label: "Projetos", href: "#projetos" },
+    { label: "Quem somos", href: "#quem-somos" },
     { label: "Contato", href: "#contato" },
   ];
 
@@ -725,6 +727,7 @@ function Index() {
         <Portfolio />
         <Trust />
         <HowItWorks />
+        <About />
         <FinalCTA />
       </main>
       <Footer />

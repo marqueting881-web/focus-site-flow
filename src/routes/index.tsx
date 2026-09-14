@@ -36,7 +36,7 @@ import portfolioConstrutoraVermelha from "../assets/portfolio-construtora-vermel
 import portfolioConstrutorAutonomo from "../assets/portfolio-construtor-autonomo.png";
 
 const WHATSAPP_LINK =
-  "https://wa.me/5551998232206?text=Solicite%20uma%20ideia%20de%20site%20para%20sua%20empresa.";
+  "https://wa.me/5551980540115?text=Quero%20uma%20ideia%20de%20site%20para%20minha%20construtora";
 
 function useScrollReveal() {
   const ref = useRef<HTMLDivElement>(null);
@@ -699,7 +699,7 @@ function About() {
                 Solicite uma ideia de site para a sua construtora.
               </p>
               <a
-                href="https://wa.me/5551998232206"
+                href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-primary-foreground px-8 py-4 text-base font-semibold text-brand-deep transition-all hover:bg-primary-foreground/90 hover:shadow-xl hover:shadow-primary-foreground/20"

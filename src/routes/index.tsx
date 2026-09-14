@@ -682,29 +682,33 @@ function About() {
         </div>
 
         <ScrollReveal delay={0.1}>
-          <div className="mx-auto mt-14 max-w-3xl rounded-3xl border border-border bg-background p-8 text-center sm:p-12">
-            <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-              <HeartHandshake className="h-6 w-6" />
-            </span>
-            <h3 className="mt-5 text-xl font-bold tracking-tight text-foreground sm:text-2xl">
-              Nosso compromisso
-            </h3>
-            <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
-              Tratar o seu projeto com atenção, manter uma comunicação clara e valorizar aquilo que
-              você construiu com tanto esforço.
-            </p>
-            <p className="mx-auto mt-6 max-w-xl text-lg font-semibold leading-snug text-foreground">
-              Solicite uma ideia de site para a sua construtora.
-            </p>
-            <a
-              href="https://wa.me/5551998232206"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25"
-            >
-              <MessageCircle className="h-5 w-5" />
-              Converse com a gente pelo WhatsApp
-            </a>
+          <div className="relative mx-auto mt-14 max-w-3xl overflow-hidden rounded-3xl bg-brand-deep p-8 text-center shadow-2xl shadow-brand-deep/25 sm:p-12">
+            <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-primary/45 blur-3xl" />
+            <div className="absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-primary/30 blur-3xl" />
+            <div className="relative z-10">
+              <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-foreground/15 text-primary-foreground">
+                <HeartHandshake className="h-6 w-6" />
+              </span>
+              <h3 className="mt-5 text-xl font-bold tracking-tight text-primary-foreground sm:text-2xl">
+                Nosso compromisso
+              </h3>
+              <p className="mx-auto mt-4 max-w-xl leading-relaxed text-primary-foreground/80">
+                Tratar o seu projeto com atenção, manter uma comunicação clara e valorizar aquilo que
+                você construiu com tanto esforço.
+              </p>
+              <p className="mx-auto mt-6 max-w-xl text-lg font-semibold leading-snug text-primary-foreground">
+                Solicite uma ideia de site para a sua construtora.
+              </p>
+              <a
+                href="https://wa.me/5551998232206"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-primary-foreground px-8 py-4 text-base font-semibold text-brand-deep transition-all hover:bg-primary-foreground/90 hover:shadow-xl hover:shadow-primary-foreground/20"
+              >
+                <MessageCircle className="h-5 w-5" />
+                Converse com a gente pelo WhatsApp
+              </a>
+            </div>
           </div>
         </ScrollReveal>
       </div>

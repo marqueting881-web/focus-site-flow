@@ -106,7 +106,6 @@ function Header() {
     { label: "Para quem", href: "#para-quem" },
     { label: "Projetos", href: "#projetos" },
     { label: "Quem somos", href: "#quem-somos" },
-    { label: "Contato", href: "#contato" },
   ];
 
   return (
@@ -833,7 +832,6 @@ function Index() {
         <Trust />
         <HowItWorks />
         <About />
-        <FinalCTA />
       </main>
       <Footer />
     </div>

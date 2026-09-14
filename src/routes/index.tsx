@@ -715,38 +715,6 @@ function About() {
   );
 }
 
-function FinalCTA() {
-  return (
-    <section id="contato" className="bg-topbar px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
-      <div className="mx-auto max-w-4xl">
-        <ScrollReveal>
-          <div className="relative overflow-hidden rounded-3xl bg-foreground px-6 py-16 text-center sm:px-12 lg:py-20">
-            <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
-            <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
-
-            <div className="relative z-10">
-              <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl">
-                Solicitar orçamento pelo whatsApp?
-              </h2>
-              <p className="mx-auto mt-4 max-w-lg text-lg text-primary-foreground/80">
-                Solicite uma ideia de site para a sua construtora.
-              </p>
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25"
-              >
-                <MessageCircle className="h-5 w-5" />
-                Falar no WhatsApp
-              </a>
-            </div>
-          </div>
-        </ScrollReveal>
-      </div>
-    </section>
-  );
-}
 
 function Footer() {
   return (

@@ -500,7 +500,7 @@ function Trust() {
     {
       icon: MessageCircle,
       title: "Atendimento humanizado",
-      description: "Você conversa nossa equipe do começo ao fim, sem intermediários.",
+      description: "Você conversa com nossa equipe do começo ao fim, sem intermediários.",
     },
     {
       icon: Layout,

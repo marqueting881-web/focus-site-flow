@@ -305,7 +305,8 @@ function Services() {
     {
       icon: Building2,
       title: "Sites Institucionais",
-      description: "Sites completos para empresas profissionais.",
+      description:
+        "Estrutura completa para mostrar quem você é, o que faz e como o cliente pode entrar em contato.",
     },
     {
       icon: RefreshCw,

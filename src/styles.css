@@ -201,6 +201,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Keep section titles clear of the fixed header when using the menu */
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   *,

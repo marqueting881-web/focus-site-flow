@@ -402,14 +402,14 @@ function DomainHosting() {
                 seu site.
               </p>
 
-              <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-8">
+              <div className="mx-auto mt-8 flex w-fit flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-8">
                 {includes.map((label) => (
                   <span
                     key={label}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-foreground"
+                    className="inline-flex items-start gap-2 text-left text-sm font-semibold text-foreground sm:items-center"
                   >
-                    <Check className="h-4 w-4 shrink-0 text-primary" />
-                    {label}
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary sm:mt-0" />
+                    <span>{label}</span>
                   </span>
                 ))}
               </div>

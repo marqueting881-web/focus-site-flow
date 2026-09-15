@@ -341,6 +341,100 @@ function Services() {
   );
 }
 
+function DomainHosting() {
+  const items = [
+    {
+      icon: Globe,
+      title: "Domínio",
+      description:
+        "É o endereço do seu site, como suaempresa.com.br. É o nome que seus clientes digitam para encontrar você na internet.",
+    },
+    {
+      icon: Server,
+      title: "Hospedagem",
+      description:
+        "É o que mantém o seu site funcionando na internet, disponível para quem procurar por ele a qualquer hora.",
+    },
+  ];
+
+  const includes = [
+    "Registro do domínio",
+    "Configuração da hospedagem",
+    "Publicação do site",
+  ];
+
+  return (
+    <section id="dominio" className="px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <div className="mx-auto max-w-6xl">
+        <div className="rounded-3xl border border-border bg-secondary/50 p-8 sm:p-12 lg:p-16">
+          <ScrollReveal className="mx-auto max-w-2xl text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
+              Parte técnica resolvida
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              Domínio e Hospedagem
+            </h2>
+          </ScrollReveal>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {items.map((item, index) => (
+              <ScrollReveal key={item.title} delay={index * 0.1}>
+                <div className="h-full rounded-2xl border border-border bg-background p-8">
+                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-primary text-primary-foreground">
+                    <item.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="mt-6 text-xl font-bold text-foreground">{item.title}</h3>
+                  <p className="mt-3 leading-relaxed text-muted-foreground">
+                    {item.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.2}>
+            <div className="mt-8 rounded-2xl border border-primary/15 bg-background p-8 text-center lg:p-12">
+              <p className="text-lg font-semibold leading-relaxed text-foreground">
+                Você não precisa se preocupar com essa parte técnica.
+              </p>
+              <p className="mx-auto mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+                Eu cuido do registro do domínio, da configuração da hospedagem e da publicação do
+                seu site.
+              </p>
+
+              <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-8">
+                {includes.map((label) => (
+                  <span
+                    key={label}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-foreground"
+                  >
+                    <Check className="h-4 w-4 shrink-0 text-primary" />
+                    {label}
+                  </span>
+                ))}
+              </div>
+
+              <p className="mx-auto mt-10 max-w-xl text-xl font-bold text-primary sm:text-2xl">
+                Você cuida da sua empresa. Eu cuido do seu site.
+              </p>
+
+              <a
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25"
+              >
+                Quero meu site completo
+                <ArrowRight className="h-5 w-5" />
+              </a>
+            </div>
+          </ScrollReveal>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Audience() {
   const audience = [
     {

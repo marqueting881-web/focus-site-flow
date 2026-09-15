@@ -25,6 +25,8 @@ import {
   ListChecks,
   Headset,
   HeartHandshake,
+  Server,
+  Check,
 } from "lucide-react";
 
 import heroApresentacao from "../assets/hero-apresentacao.png.asset.json";
@@ -103,6 +105,7 @@ function Header() {
 
   const navLinks = [
     { label: "Serviços", href: "#servicos" },
+    { label: "Domínio", href: "#dominio" },
     { label: "Para quem", href: "#para-quem" },
     { label: "Projetos", href: "#projetos" },
     { label: "Quem somos", href: "#quem-somos" },
@@ -795,6 +798,7 @@ function Index() {
         <Hero />
         <Benefits />
         <Services />
+        <DomainHosting />
         <Audience />
         <Portfolio />
         <Trust />

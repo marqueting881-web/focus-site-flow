@@ -25,6 +25,9 @@ import {
   ListChecks,
   Headset,
   HeartHandshake,
+  Server,
+  Rocket,
+  KeyRound,
 } from "lucide-react";
 
 import heroApresentacao from "../assets/hero-apresentacao.png.asset.json";
@@ -106,6 +109,7 @@ function Header() {
     { label: "Para quem", href: "#para-quem" },
     { label: "Projetos", href: "#projetos" },
     { label: "Quem somos", href: "#quem-somos" },
+    { label: "Domínio", href: "#dominio-hospedagem" },
   ];
 
   return (
@@ -799,6 +803,7 @@ function Index() {
         <Portfolio />
         <Trust />
         <HowItWorks />
+        <Hosting />
         <About />
       </main>
       <Footer />

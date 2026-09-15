@@ -25,6 +25,9 @@ import {
   ListChecks,
   Headset,
   HeartHandshake,
+  Server,
+  Rocket,
+  KeyRound,
 } from "lucide-react";
 
 import heroApresentacao from "../assets/hero-apresentacao.png.asset.json";
@@ -106,6 +109,7 @@ function Header() {
     { label: "Para quem", href: "#para-quem" },
     { label: "Projetos", href: "#projetos" },
     { label: "Quem somos", href: "#quem-somos" },
+    { label: "Domínio", href: "#dominio-hospedagem" },
   ];
 
   return (
@@ -610,6 +614,107 @@ function HowItWorks() {
   );
 }
 
+function Hosting() {
+  const concepts = [
+    {
+      icon: Globe,
+      title: "Domínio",
+      description: "É o endereço do seu site, como suaempresa.com.br.",
+    },
+    {
+      icon: Server,
+      title: "Hospedagem",
+      description: "É o que mantém o seu site funcionando e disponível na internet.",
+    },
+  ];
+
+  const services = [
+    { icon: KeyRound, label: "Registro do domínio" },
+    { icon: Server, label: "Configuração da hospedagem" },
+    { icon: Rocket, label: "Publicação do site" },
+  ];
+
+  return (
+    <section
+      id="dominio-hospedagem"
+      className="border-y border-border/60 bg-primary/5 px-4 py-20 sm:px-6 lg:px-8 lg:py-28"
+    >
+      <div className="mx-auto max-w-6xl">
+        <ScrollReveal className="mx-auto max-w-2xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+            Domínio e Hospedagem
+          </p>
+          <h2 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
+            Você não precisa entender da <span className="text-primary">parte técnica</span>.
+          </h2>
+          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+            Entenda de forma simples o que faz o seu site existir na internet.
+          </p>
+        </ScrollReveal>
+
+        <div className="mt-14 grid gap-5 sm:grid-cols-2">
+          {concepts.map((item, index) => (
+            <ScrollReveal key={item.title} delay={index * 0.1}>
+              <div className="flex h-full gap-4 rounded-2xl border border-border bg-background p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl hover:shadow-foreground/5">
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary">
+                  <item.icon className="h-6 w-6" />
+                </span>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground">{item.title}</h3>
+                  <p className="mt-2 leading-relaxed text-muted-foreground">{item.description}</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        <ScrollReveal delay={0.1}>
+          <div className="mt-6 rounded-2xl border border-primary/20 bg-background p-7 sm:p-9">
+            <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+              Eu cuido dessa parte para você
+            </h3>
+            <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
+              Você não precisa se preocupar com nenhum detalhe técnico: posso cuidar do registro do
+              domínio, da configuração da hospedagem e da publicação do seu site.
+            </p>
+            <div className="mt-7 grid gap-4 sm:grid-cols-3">
+              {services.map((service) => (
+                <div
+                  key={service.label}
+                  className="flex items-center gap-3 rounded-xl border border-border bg-secondary/40 px-4 py-3"
+                >
+                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
+                    <service.icon className="h-5 w-5" />
+                  </span>
+                  <p className="text-sm font-semibold text-foreground">{service.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.15}>
+          <div className="mt-14 text-center">
+            <p className="mx-auto max-w-2xl text-xl font-bold leading-snug tracking-tight text-foreground sm:text-2xl">
+              Você cuida da sua empresa.{" "}
+              <span className="text-primary">Eu cuido do seu site.</span>
+            </p>
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25"
+            >
+              <MessageCircle className="h-5 w-5" />
+              Quero meu site completo
+            </a>
+          </div>
+        </ScrollReveal>
+      </div>
+    </section>
+  );
+}
+
 function About() {
   const people = [
     {
@@ -799,6 +904,7 @@ function Index() {
         <Portfolio />
         <Trust />
         <HowItWorks />
+        <Hosting />
         <About />
       </main>
       <Footer />

@@ -36,6 +36,7 @@ import portfolioConstrutora from "../assets/portfolio-construtora.png";
 import portfolioRestaurante from "../assets/portfolio-restaurante.png";
 import portfolioConstrutoraVermelha from "../assets/portfolio-construtora-vermelha.png";
 import portfolioConstrutorAutonomo from "../assets/portfolio-construtor-autonomo.png";
+import { LeadForm } from "@/components/LeadForm";
 
 const WHATSAPP_LINK =
   "https://wa.me/5551980540115?text=Quero%20uma%20ideia%20de%20site%20para%20minha%20construtora";
@@ -899,6 +900,7 @@ function Index() {
         <Trust />
         <HowItWorks />
         <About />
+        <LeadForm />
       </main>
       <Footer />
     </div>

@@ -39,7 +39,7 @@ import portfolioConstrutorAutonomo from "../assets/portfolio-construtor-autonomo
 import { LeadForm } from "@/components/LeadForm";
 
 const WHATSAPP_LINK =
-  "https://wa.me/5551980540115?text=Quero%20uma%20ideia%20de%20site%20para%20minha%20construtora";
+  "https://wa.me/5551996836733?text=Quero%20uma%20ideia%20de%20site%20para%20minha%20construtora";
 
 function useScrollReveal() {
   const ref = useRef<HTMLDivElement>(null);

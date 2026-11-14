@@ -3,7 +3,7 @@ import { z } from "zod";
 import { MessageCircle, Check } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 
-const WHATSAPP_NUMBER = "5551980540115";
+const WHATSAPP_NUMBER = "5551996836733";
 
 const schema = z.object({
   name: z.string().trim().min(1, "Informe seu nome").max(100),
